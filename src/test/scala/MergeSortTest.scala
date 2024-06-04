@@ -1,6 +1,6 @@
 import org.scalatest.funsuite.AnyFunSuiteLike
 
-class MergeSortTest extends AnyFunSuiteLike {
+class MergeSortTest extends AnyFunSuiteLike:
 
     test("Empty list") {
         val arr = List.empty[Int]
@@ -61,4 +61,4 @@ class MergeSortTest extends AnyFunSuiteLike {
         val res = List(-9, -6, -3, -1, -1, 2, 3, 4, 5, 5, 5)
         assert(MergeSort.mergeSort(arr) == res)
     }
-}
+

@@ -1,4 +1,4 @@
-object MergeSort { // Time complexity: O(n*log(n)) Space complexity: O(1)
+object MergeSort:
 
     def mergeSort(list: List[Int]): List[Int] = list match
         case Nil => Nil
@@ -13,5 +13,3 @@ object MergeSort { // Time complexity: O(n*log(n)) Space complexity: O(1)
         case (x :: xt, y :: yt) =>
             if (x < y) x :: merge(xt, list2)
             else y :: merge(yt, list1)
-
-}

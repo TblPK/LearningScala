@@ -1,6 +1,6 @@
 import org.scalatest.funsuite.AnyFunSuiteLike
 
-class BinarySearchTest extends AnyFunSuiteLike {
+class BinarySearchTest extends AnyFunSuiteLike:
 
     test("Empty array") {
         val arr = Array.emptyIntArray
@@ -57,4 +57,3 @@ class BinarySearchTest extends AnyFunSuiteLike {
         assert(BinarySearch.binarySearchIterative(arr, tar) == res)
         assert(BinarySearch.binarySearchRecursive(arr, tar)() == res)
     }
-}

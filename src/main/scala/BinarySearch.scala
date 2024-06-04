@@ -1,6 +1,6 @@
 import scala.annotation.tailrec
 
-object BinarySearch { // Time complexity: O(log(n)) Space complexity: O(1)
+object BinarySearch:
 
     def binarySearchIterative(arr: Array[Int], tar: Int): Int =
         var (left, right) = (0, arr.length - 1)
@@ -20,5 +20,3 @@ object BinarySearch { // Time complexity: O(log(n)) Space complexity: O(1)
             case _ if arr(mid) == tar => mid
             case _ if arr(mid) < tar => binarySearchRecursive(arr, tar)(mid + 1, right)
             case _ if arr(mid) > tar => binarySearchRecursive(arr, tar)(left, mid - 1)
-
-}
